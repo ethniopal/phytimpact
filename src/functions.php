@@ -34,7 +34,7 @@ addPalette(array(
 
 //déclaration des CPT du site web
 $cptIngredient = newCpt("ingrédient", "ingrédients", true);
-
+wp_die('CPT: ' . $cptIngredient);
 //déclaration de la taxonomy
 $taxonomyGamme = newTaxonomiy(array($cptIngredient), "Gamme de produit", "Gammes de produit", false);
 

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Permet de lister les pages archives dans les menus
  * Class el_archive_pages_menu
