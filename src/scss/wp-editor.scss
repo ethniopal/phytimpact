@@ -1,0 +1,33 @@
+/*
+Plugin Name: Admin Editor CSS
+Description: Custom Admin styles.
+Author: Olivier Lapointe
+Author URI: https://oliweb.ca
+*/
+
+@import "settings/settings.all";
+@import "tools/tools.all";
+@import "generic/generic.all";
+@import "elements/elements.all";
+@import "objects/objects.all";
+
+
+
+/* Main column width */
+.wp-block {
+  max-width: 900px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+p{
+  font-size:1rem;
+}

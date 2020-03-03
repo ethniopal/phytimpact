@@ -1,0 +1,9 @@
+.idea
+.well-known
+_backup
+node_modules
+docs
+doc
+src/webfonts
+www
+.env

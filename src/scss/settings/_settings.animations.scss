@@ -1,0 +1,25 @@
+///*----------------------------------*\
+//  #ANIMATION
+//\*----------------------------------*/
+
+
+
+/*
+  * Animation Par Défaut
+ */
+$easeIn: ease-in !default;
+$easeOut: ease-out !default;
+$easeInOut: ease-in-out !default;
+
+
+/*
+  * Animation Custom
+ */
+$easeInOut--custom: cubic-bezier(.5, 0, .5, 1);
+
+/*
+  * Class d'animations
+ */
+$animItemDefault: $easeInOut--custom; //Quand l'élément reste dans le canva
+$animItemIn: $easeIn; //Quand l'élément sort du canva
+$animItemOut: $easeOut; //Quand l'élément entre dans le canva

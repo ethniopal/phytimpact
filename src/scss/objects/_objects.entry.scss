@@ -1,0 +1,19 @@
+/*------------------------------------*\
+  #WRAPPERS
+\*------------------------------------*/
+
+.o-wrapper {
+  max-width: 1280px;
+  padding-right: $global-spacing-unit;
+  padding-left:  $global-spacing-unit;
+  margin-right: auto;
+  margin-left:  auto;
+}
+
+.entry-header, .entry-content{
+  display:block;
+  width:auto;
+  max-width:550px;
+  margin:auto;
+
+}

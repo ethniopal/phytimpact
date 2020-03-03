@@ -1,0 +1,34 @@
+:root {
+    --bg-clr: #0A192F;
+    --accent-clr: #64FFDA;
+    --text-clr: #8892B0;
+    --heading-clr: #CCD6F6;
+
+    --main-ff: 'Roboto', sans-serif;
+    --second-ff: 'Roboto Mono', monospace;
+
+    --logo-size:1.2rem;
+    --nav-size:1rem;
+    --text-size:1.2rem;
+    --h3-size: 1rem;
+    --h1-size: 4rem;
+    --h2-size: 1.5rem;
+
+    --small-size: 0.8rem;
+
+}
+
+.btn {
+    color: var(--accent-clr);
+    border: 1px solid var(--accent-clr);
+    padding:1em 2em;
+    white-space: nowrap;
+}
+
+
+@import 'base/reset.scss';
+@import 'base/typo.scss';
+
+@import 'parts/nav.scss';
+@import 'parts/intro.scss';
+@import 'parts/footer.scss';

@@ -1,0 +1,117 @@
+///*------------------------------------*\
+//    #MIXINS
+//\*------------------------------------*/
+
+// Global mixins available to the entire project. Define file-specific
+// mixins inside the file to which they relate.
+
+
+
+
+
+// Mixin to create a declaration whose value is a rem unit. Also provide pixel fallback.
+//
+// .simple-usage {
+//   @include rem(padding, 10px);
+// }
+
+@mixin rem($property, $value) {
+  #{$property}: $value;
+  #{$property}: rem($value);
+}
+
+
+
+
+
+// Mixin to drop micro clearfix into a selector.
+//
+// .simple-usage {
+//   @include clearfix();
+// }
+//
+// .detailed-usage {
+//   @include clearfix(important);
+// }
+
+@mixin clearfix($important: false) {
+
+  // Determine whether or not to make declarations important.
+  @if ($important == false) {
+    $important: null;
+  } @else {
+    $important: !important;
+  }
+
+  &:after {
+    content: "" $important;
+    display: table $important;
+    clear: both $important;
+  }
+
+}
+
+
+
+
+
+// Generate `:hover` and `:focus` styles in one go.
+@mixin hocus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+// =============================================================================
+// Font Face
+/** exemple d'utilisation
+ @include font-face(Samplino, fonts/Samplino);
+ @include font-face("Samplina Neue", fonts/SamplinaNeue, bold, italic);
+ @include font-face(Samplinoff, fonts/Samplinoff, null, null, woff);
+ @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+ */
+// =============================================================================
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+          eot: "?",
+          svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}

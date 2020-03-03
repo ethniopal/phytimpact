@@ -1,0 +1,54 @@
+///*----------------------------------*\
+//  #Typography
+//\*----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap');
+
+
+/**
+Si nécessite de télécharger les fonts, utilisé une de ces fonctions et les modifier mettre en commentaire la ligne au dessus
+ */
+
+//@include font-face(Samplino, fonts/Samplino);
+//@include font-face("Samplina Neue", fonts/SamplinaNeue, bold, italic);
+//@include font-face(Samplinoff, fonts/Samplinoff, null, null, woff);
+//@include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+
+$mainFonts: 'Source Sans Pro', Helvetica, sans-serif;
+$altFonts: $mainFonts;
+
+
+
+//Simple default styles for headings 1 through 6.
+$font-size-h1:  36px !default;
+$font-size-h2:  28px !default;
+$font-size-h3:  24px !default;
+$font-size-h4:  20px !default;
+$font-size-h5:  18px !default;
+$font-size-h6:  16px !default;
+
+$font-size-text:16px !default;
+
+
+//font-awesome
+$font-awesome : true;
+
+//liste des icons désirés
+$myIconList : (
+        fa-search,
+        fa-facebook-f,
+        fa-facebook-square,
+        fa-youtube,
+        fa-instagram,
+        fa-linkedin,
+        fa-linkedin-square,
+        fa-envelope,
+        fa-phone,
+        fa-times,
+        fa-bars,
+        fa-paper-plane,
+        fa-angle-down,
+        fa-caret-down,
+        fa-chevron-left,
+        fa-chevron-right,
+);

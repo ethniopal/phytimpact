@@ -1,0 +1,194 @@
+///*----------------------------------*\
+//  #COLORS
+//\*----------------------------------*/
+
+// Set up a colour palette which allows us to theme the entire project from one
+// location.
+$main: #211651 !default;
+$secondary : #7bc752!default
+
+$main-rgb: rgb(32,27,81) !default;
+$secondary-rgb : rgb(122,193,27) !default;
+
+$light-green:   #d8ecc9;
+
+
+// Colour palette.
+// Start with assigning color names to specific hex values.
+$white: #fff !default;
+$black: #101010 !default;
+$red: #e53e50 !default;
+$orange: #f19235 !default;
+$yellow: #f5ce2b !default;
+$green-light: #eef7f3 !default;
+$green: #00b078 !default;
+$blue: #4868ac !default;
+$teal: #0faaad !default;
+$pink: #E6007E !default;
+$purple: #613d7c !default;
+
+
+// Create grayscale
+$gray-dark:                 #292b2c !default;
+$gray:                      #939598 !default;
+$gray-light:                #cccccc !default;
+$gray-lighter:              #f7f7f7 !default;
+$gray-lightest:             #fafafa !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary:             $main !default;
+$brand-success: $green !default;
+$brand-info: $teal !default;
+$brand-warning: $yellow !default;
+$brand-danger: $red !default;
+$brand-inverse: $gray-dark !default;
+
+// Links
+// Style anchor elements.
+
+$link-color: $brand-primary !default;
+$link-decoration: none !default;
+$link-hover-color: $black !default;
+$link-hover-decoration: none !default;
+
+
+// Start with assigning color names to specific hex values.
+$white: #fff !default;
+$black: #101010 !default;
+$red: #e53e50 !default;
+$orange: #f19235 !default;
+$yellow: #f5ce2b !default;
+$green-light: #eef7f3 !default;
+$green: #00b078 !default;
+$blue: #4868ac !default;
+$teal: #0faaad !default;
+$pink: #E6007E !default;
+$purple: #613d7c !default;
+
+// Create grayscale
+$gray-dark: #333333 !default;
+$gray: #a19f9d !default;
+$gray-light: #c7c8ca !default;
+$gray-lighter: #dcd9d5 !default;
+$gray-lightest: #f7f7f7 !default;
+
+// Reassign color vars to semantic color scheme
+$brand-primary: $green !default;
+$brand-success: $green !default;
+$brand-info: $teal !default;
+$brand-warning: $yellow !default;
+$brand-danger: $red !default;
+$brand-inverse: $gray-dark !default;
+
+
+//general
+$title-color:               $main;
+$content-color:             $gray;
+
+//top-nav
+$top-nav-bg:                $white;
+$top-nav-link:              $gray;
+$top-nav-link-hover:        $main;
+$top-nav-cta:               $green;
+$top-nav-cta-txt:           $white;
+
+//main-nav
+$main-nav-link:             $green;
+$main-nav-link-hover:       $main;
+
+
+//banner
+$banner-title-color:        $light-green;
+$banner-bg:                 #e5e5e5;
+
+
+//footer
+$footer-bg:                 #333132;
+$footer-title-color:        $gray-lighter;
+$footer-txt:                #c7c8ca;
+$footer-link:               #c7c8ca;
+$footer-link-hover :        $white;
+
+//copyright
+$copyright-txt:             #c7c8ca;
+$footer-copyright-bg:       $footer-bg;
+$copyright-link:            $copyright-txt;
+$copyright-link-hover:      $white;
+
+
+// Links
+$link-color: $brand-primary !default;
+$link-decoration: none !default;
+$link-hover-color: $black !default;
+$link-hover-decoration: none !default;
+
+// Couleur pour les socials Medias
+$facebook: #1877f2;
+$facebookold: #3b5998;
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$instagrammagenta: #c32aa3;
+$instagramblue: #4c5fd7;
+$instagrampurple: #7232bd;
+$instagramorange: #f46f30;
+$instagramyellow: #ffdc7d;
+$googleblue: #4285f4;
+$googlered: #ea4335;
+$googleyellow: #fbbc05;
+$googlegreen: #34a853;
+$pinterest: #bd081c;
+$googleplus: #db4437;
+$linkedin: #007bb5;
+$vimeoblue: #1ab7ea;
+$tumblr: #2c4762;
+$snapchat: #fffc00;
+$whatsappgreen: #25d366;
+$whatsappteal1: #075e54;
+$whatsappteal2: #128c7e;
+$mastodon: #2b90d9;
+$apple: #a6b1b7;
+$amazon: #ff9900;
+$microsoftred: #f35022;
+$microsoftgreen: #80bb03;
+$microsoftblue: #03a5f0;
+$microsoftyellow: #ffb903;
+$periscope: #40a4c4;
+$foursquarepink: #f94877;
+$foursquarenavy: #073282;
+$foursquareblue: #2d5be3;
+$yelp: #d32323;
+$swarm: #ffa633;
+$medium: #02b875;
+$skypeblue: #00aff0;
+$skypedkblue: #0078d7;
+$android: #a4c639;
+$stumbleupon: #e94826;
+$flickrpink: #f40083;
+$flickrblue: #006add;
+$yahoo: #430297;
+$twitch: #9146ff;
+$soundcloud: #ff5500;
+$spotifygreen: #1ed760;
+$spotifydarkgreen: #1db954;
+$dribbble: #ea4c89;
+$slackpurple: #4a154b;
+$slackblue: #36c5f0;
+$slackgreen: #2eb67d;
+$slackred: #e01e5a;
+$slackyellow: #ecb22e;
+$reddit: #ff5700;
+$deviantart: #05cc47;
+$pocket: #ee4056;
+$quora: #aa2200;
+$quorablue: #2b6dad;
+$slideshareorange: #e68523;
+$slideshareblue: #00a0dc;
+$fivehundredpx: #0099e5;
+$vk: #4a76a8;
+$listlyorange: #df6d46;
+$listlyblue: #52b1b3;
+$vine: #00b489;
+$steam: #171a21;
+$discord: #7289da;
+$telegram: #0088cc;
+$clarity: #61bed9;

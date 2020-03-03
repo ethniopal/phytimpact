@@ -1,0 +1,17 @@
+/*------------------------------------*\
+  #Generic
+\*------------------------------------*/
+
+/**
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field.
+ * Reset................A pared back reset to remove margins.
+ * Shared...............Sensibly and tersely share global commonalities.
+ */
+
+@import "generic.box-sizing";
+@import "generic.reset";
+@import "generic.normalize";
+@import "generic.core";
+
+//@import "generic.shared";

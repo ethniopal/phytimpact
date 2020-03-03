@@ -1,0 +1,10 @@
+/*
+Plugin Name: Admin CSS
+Description: Custom Admin styles.
+Author: Olivier Lapointe
+Author URI: https://oliweb.ca
+*/
+
+.comment-count, #wp-version {
+  display: none !important;
+}
