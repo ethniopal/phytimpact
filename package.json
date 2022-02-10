@@ -53,7 +53,7 @@
     "mysql": "^2.18.1",
     "mysqldump": "^3.1.0",
     "ngrok": "^3.2.7",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "npm-run": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
